@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airline | AussieAir</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/quaries.css" />
+
+    <link rel="icon" href="assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="header-logo"><span>AussieAir</span></a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#cta">Book a flight</a></li>
+          <li><a class="main-nav-link" href="#cta">Destinations</a></li>
+          <li><a class="main-nav-link" href="#section-attractions">Attractions</a></li>
+          <li><a class="main-nav-link" href="#hero-section">About us</a></li>
+          <li><a class="main-nav-link nav-login" href="#">Log In</a></li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero-section" id="hero-section">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Around
+              <span class="highlight">the</span>
+              land<br />
+              <span class="highlight">down</span>
+              under
+            </h1>
+            <p class="hero-description">
+              Explore our diverse range of destinations, enjoy flexible booking
+              options, and experience the true spirit of Australian hospitality
+              with AussieAir. Start your next adventure with us today!
+            </p>
+            <div class="customers-wrapper">
+              <div class="customers-imgs">
+                <img src="assets/customers/customer-1.jpg" alt="Customer photo" />
+                <img src="assets/customers/customer-2.jpg" alt="Customer photo" />
+                <img src="assets/customers/customer-3.jpg" alt="Customer photo" />
+                <img src="assets/customers/customer-4.jpg" alt="Customer photo" />
+                <img src="assets/customers/customer-5.jpg" alt="Customer photo" />
+                <img src="assets/customers/customer-6.jpg" alt="Customer photo" />
+              </div>
+              <p class="customers-text">
+                <span>800,000+</span> happy passangers last year!
+              </p>
+            </div>
+          </div>
+          <div class="hero-image-box">
+            <picture>
+              <source srcset="assets/airplane.svg" type="image/svg" />
+
+              <img
+                src="assets/airplane.svg"
+                class="hero-img"
+                alt="An illustration of a landing plane"
+              />
+            </picture>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <h2 class="heading-secondary">Book your flight!</h2>
+          <div class="cta">
+            <div class="cta-text-box">
+              <form class="cta-form" name="sign-up">
+                  <div class="option-box ">
+                    <ul class="options grid--3-cols grid--center-v">
+                      <li class="option-item">
+                        <input type="radio" name="trip-type" id="round-trip" class="trip-type" checked="checked">
+                        <label for="round-trip">Round trip</label>
+                      </li>
+                      <li class="option-item">
+                        <input type="radio" name="trip-type" id="one-way" class="trip-type">
+                        <label for="one-way">One way</label>
+                      </li>
+                      <li class="option-item">
+                        <input type="radio" name="trip-type" id="multi-dest" class="trip-type">
+                        <label for="multi-dest">Multiple destinations</label>
+                      </li>
+                    </ul>        
+                  </div>
+
+                    <div class="grid--3-cols flights">
+                      <div>
+                        <label for="flying-from" class="label-text">Flying from</label>
+                        <select id="select-from" class="input-box" name="select-from" required>
+                          <option value="">Brisbane (BNE), Queensland</option>
+                          <option value="Gold Coast">Gold Coast (OOL), Queensland</option>
+                          <option value="Cairns">Cairns (CNS), Queensland</option>
+                          <option value="Canberra">Canberra (CBR), Australian Capital Territory</option>
+                          <option value="Sydney">Sydney (SYD), New South Wales</option>
+                          <option value="Melbourne"> Melbourne (MEL), Victoria</option>
+                          <option value="Perth">Perth (PER), Western Australia</option>
+                          <option value="Adelaide">Adelaide (ADL), South Australia</option>
+                          <option value="Hobart">Hobart (HBA), Tasmania</option>
+                          <option value="Darwin">Darwin (DRW), Northern Territory</option>
+                        </select>
+                      </div>
+                      <div class="switch-places"><ion-icon name="swap-horizontal" class="switch-icon"></ion-icon></div>
+                      <div>
+                        <label for="flying-to" class="label-text">Flying to</label>
+                        <select id="select-to" class="input-box" name="select-to" required>
+                          <option value="Perth">Perth (PER), Western Australia</option>
+                          <option value="Brisbane">Brisbane (BNE), Queensland</option>
+                          <option value="Gold Coast">Gold Coast (OOL), Queensland</option>
+                          <option value="Cairns">Cairns (CNS), Queensland</option>
+                          <option value="Canberra">Canberra (CBR), Australian Capital Territory</option>
+                          <option value="Sydney">Sydney (SYD), New South Wales</option>
+                          <option value="Melbourne"> Melbourne (MEL), Victoria</option>
+                          <option value="Adelaide">Adelaide (ADL), South Australia</option>
+                          <option value="Hobart">Hobart (HBA), Tasmania</option>
+                          <option value="Darwin">Darwin (DRW), Northern Territory</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="grid grid--2-cols grid--center-v">
+                      <div>
+                        <label for="departure" class="label-text">Departure</label>
+                        <input type="datetime-local" name="departure" id="departure" class="input-box" placeholder="Select date" required>
+                      </div>
+                      <div>
+                        <label for="return" class="label-text">Return</label>
+                        <input type="datetime-local" name="return" id="return" class="input-box" placeholder="Select date" required>
+                      </div>
+                    </div>
+
+
+                  <div class="grid grid--3-cols grid--center-v">
+                    <div>
+                      <label for="adults" class="label-text">Adults <span>12+ years</span></label>
+                      <input type="number" class="input-box" name="adults" id="adults" placeholder="1" min="0" max="9">
+                    </div>
+                    <div>
+                      <label for="children" class="label-text">Children <span>3-12 years</span></label>
+                      <input type="number" class="input-box" name="children" id="children" placeholder="0" min="0" max="9">
+                    </div>
+                    <div>
+                      <label for="infants" class="label-text">Infants <span>0-2 years</span></label>
+                      <input type="number" class="input-box" name="infants" id="infants" placeholder="0" min="0" max="9">
+                    </div>
+                  </div> 
+                  
+                  
+                    <div class="option-box">
+                      <label for="class-type" class="label-text">Class</label>
+                      <ul class="options grid--3-cols grid--center-v">
+                        <li class="option-item">
+                          <input type="radio" name="class-type" id="economy-class" class="class-type" checked="checked">
+                          <label for="round-trip">Economy</label>
+                        </li>
+                        <li class="option-item">
+                          <input type="radio" name="class-type" id="business-class" class="class-type">
+                          <label for="one-way">Business</label>
+                        </li>
+                        <li class="option-item">
+                          <input type="radio" name="class-type" id="first-class" class="class-type">
+                          <label for="multi-dest">First</label>
+                        </li>
+                      </ul>        
+                    </div>
+
+                    <div class="grid grid--2-cols grid--center-v">
+                      <div>
+                        <label for="full-name" class="label-text">Full Name</label>
+                        <input
+                          id="full-name"
+                          type="text"
+                          placeholder="Jane Doe"
+                          name="full-name"
+                          class="input-box"
+                          maxlength="40"
+                          required
+                        />
+                      </div>
+      
+                      <div>
+                        <label for="email" class="label-text">Email address</label>
+                        <input
+                          id="email"
+                          type="email"
+                          placeholder="me@example.com"
+                          name="email"
+                          class="input-box"
+                          maxlength="40"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <button type="submit" class="search-flight--btn btn--show-modal">Search flight</button>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-attractions" id="section-attractions">
+        <div class="container">
+          <span class="subheading">So much to offer</span>
+          <h2 class="heading-secondary">
+            Wide range of one of a kind attractions!
+          </h2>
+        </div>
+
+        <div class="container grid grid--2-cols grid--center-v">
+          <!-- ATTRACTION 01 -->
+          <div class="attraction-text-box">
+            <p class="attraction-number">01</p>
+            <h3 class="heading-tertiary">
+              Ride the waves along Australia's iconic coastlines 
+            </h3>
+            <p class="attraction-description">
+              Whether you're a seasoned pro or a beginner, our crystal-clear waters beckon you to catch the thrill of a lifetime. Join us and experience the exhilarating rush of surfing in paradise.
+            </p>
+          </div>
+          <div class="attraction-img-box">
+            <img
+              src="assets/attractions/attraction-1.svg"
+              class="attraction-img"
+              alt="Attraction, picture of a surfer"
+            />
+          </div>
+          <!-- ATTRACTION 02 -->
+          <div class="attraction-img-box">
+            <img
+              src="assets/attractions/attraction-2.svg"
+              class="attraction-img"
+              alt="Attraction, picture of a hiking woman"
+            />
+          </div>
+          <div class="attraction-text-box">
+            <p class="attraction-number">02</p>
+            <h3 class="heading-tertiary">Discover the sweet side of adventure in stunning deserts</h3>
+            <p class="attraction-description">
+              From the fiery hues of the Outback to the mystical landscapes of the Red Centre, every dune holds a tale waiting to be uncovered. Unleash your inner explorer and let the desert whispers guide your journey.
+            </p>
+          </div>
+          <!-- ATTRACTION 03 -->
+          <div class="attraction-text-box">
+            <p class="attraction-number">03</p>
+            <h3 class="heading-tertiary">Embark on the ultimate overlanding adventure Down Under </h3>
+            <p class="attraction-description">
+              Camp under star-studded skies, forge friendships around crackling campfires, and let the spirit of discovery guide your journey. Whether you're a seasoned traveler or a novice explorer, Australia's vast highways promise endless possibilities.
+            </p>
+          </div>
+          <div class="attraction-img-box">
+            <img
+              src="assets/attractions/attraction-3.svg"
+              class="attraction-img"
+              alt="Attraction, picture of a hiking woman"
+            />
+          </div>
+          <!-- ATTRACTION 04 -->
+          <div class="attraction-img-box">
+            <img
+              src="assets/attractions/attraction-4.svg"
+              class="attraction-img"
+              alt="Attraction, picture of a hiking woman"
+            />
+          </div>
+          <div class="attraction-text-box">
+            <p class="attraction-number">04</p>
+            <h3 class="heading-tertiary">Chill out and soak up the Aussie vibes</h3>
+            <p class="attraction-description">
+              Bask in the warm sunshine, sip on refreshing cocktails, and indulge in the ultimate bliss of lazy relaxation. Escape the hustle and bustle, and embrace the laid-back Aussie lifestyle by the sea. Your beachside paradise awaits.
+            </p>
+          </div>
+        </div>
+        </div>
+      </section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__nav">
+          <li class="footer__item">
+            <a class="footer__link" href="#">About</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Pricing</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Terms of Use</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Privacy Policy</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Blog</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <!-- <img src="img/icon.png" alt="Logo" class="footer__logo" /> -->
+        <p class="footer__copyright">Copyright &copy; <span class="year">2027</span> by AussieAir, Inc. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal-header">
+        Your ticket
+      </h2>
+      <div class="modal-data">
+        <div class="passanger-full-name passanger-result">Jane Doe</div>
+        <div class="passanger-email passanger-result">jane.doe@domain.com</div>
+        <div class="passanger-destination passanger-result">From: Brisbane To: Perth</div>
+        <div class="passanger-ticket-price passanger-result">$200</div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
